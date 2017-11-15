@@ -9,7 +9,11 @@ define("GREETING", "Hello :)");
 define("person", "Ibrahim");
 echo GREETING;
 echo "<br>";
-echo person;
+//constants have global scope.
+function personFunc(){
+  echo person;
+}
+personFunc();
 ?>
 
 </body>
